@@ -1,0 +1,54 @@
+/* src/styles/DashboardOverview.css */
+.overview-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  min-width: 300px;
+}
+
+.overview-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.overview-body {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.body-image {
+  width: 160px;
+  height: auto;
+}
+
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .calendar-card,
+  .upcoming-card,
+  .activity-card {
+    width: 100%;
+    min-width: unset;
+  }
+}

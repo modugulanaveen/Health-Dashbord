@@ -1,0 +1,56 @@
+/* src/styles/ActivityFeed.css */
+.activity-card {
+  flex: 1;
+  min-width: 280px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.activity-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.activity-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  height: 100px;
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width: 16px;
+  background-color: #0a85f5;
+  border-radius: 6px 6px 0 0;
+  transition: height 0.3s;
+}
+
+.bar-label {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #444;
+}
+@media (max-width: 768px) {
+  .calendar-card,
+  .upcoming-card,
+  .activity-card {
+    width: 100%;
+    min-width: unset;
+  }
+}

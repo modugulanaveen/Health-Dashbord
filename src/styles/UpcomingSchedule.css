@@ -1,0 +1,41 @@
+/* src/styles/UpcomingSchedule.css */
+.upcoming-card {
+  flex: 1;
+  min-width: 280px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.upcoming-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.day-block {
+  margin-bottom: 20px;
+}
+
+.day-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .calendar-card,
+  .upcoming-card,
+  .activity-card {
+    width: 100%;
+    min-width: unset;
+  }
+}
